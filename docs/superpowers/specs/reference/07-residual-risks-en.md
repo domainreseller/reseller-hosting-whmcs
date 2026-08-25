@@ -1,0 +1,28 @@
+# Residual risks that cannot be closed without a live panel
+
+1. **Plesk `rsession_init.php` GET behaviour is unverified.** The `?PLESKSESSID=…&success_redirect_url=…` redirect is vendor-doc-derived and was never confirmed against a live 18.0.8x panel. Mitigated by defaulting `sso.plesk_tier=post` (the auto-POST bounce, which is always correct and keeps the session id out of URLs and Referer headers) and gating the GET tier behind a `capabilities.rsessionGet` probe that inspects the Location header rather than merely asserting a 3xx. Residual: if the POST form's field names are also wrong, Plesk client SSO does not work at all in v1.
+
+2. **The Plesk password operator is asserted, not proven.** `<customer><set>` with `<values><gen_info><passwd>` is the correct-per-docs form and replaces the design's invented `set_password`, but it has not been executed against a live panel. Same class of risk as the `<domain>` bug this product exists to fix. Golden packets freeze whatever we ship; the live-panel gate is the only thing that can validate it.
+
+3. **The dialect candidate tables are derived from the bundled module's template directories plus vendor docs, not from a live panel.** `1.6.9.1` as the top Plesk candidate in particular is asserted. A Plesk build that advertises a packet version via `get_protos` while changing the node schema *inside* an operator will still fail at runtime — with a far better error message and a one-line data fix, but it will fail. Version drift is converted from 'structurally impossible to fix' to 'one array literal to fix', not eliminated.
+
+4. **Simulators and golden files encode our beliefs, not the panels' behaviour.** `PleskSim` returning 1014 for `<domain>` is a hypothesis about 18.0.80 dressed as a fixture. No golden test can catch a wire format nobody has seen. The cassette layer is the only real ground truth and it requires staging-panel access CI will not have — so the honest description is 'seven layers of internally consistent fiction plus one manual release ritual'.
+
+5. **PHP 7.2 cannot enforce immutability.** `RequestSpec`, `Dialect`, `PanelProfile` and the Context objects are immutable by convention (private properties, no setters) plus tests. A maintainer adding a 'quick fix' setter to `RequestSpec::setDialect()` reintroduces exactly the ambient-state class of bug that killed the bundled module, and the output-shaped tests would not notice. Partially mitigated by PHPStan level 6 and the golden guard asserting stamped-equals-resolved, which WOULD catch a divergence introduced that way.
+
+6. **Double `Sanitize::decode` on credentials.** `APIVersion => '1.1'` makes core decode the whole params array while `buildServiceParams`/`getServerParams` already decoded the credential fields. A stored password literally containing `&amp;` or `&nbsp;` reaches the panel as `&` / a space, so WHMCS and the panel diverge. Our generator never produces entity-shaped literals and a contract test covers the case, but a customer-chosen password can still trigger it and the module cannot fix core's behaviour.
+
+7. **cPanel `create_user_session` under strict `cookieipvalidation`.** WHM mints the session against WHMCS's outbound IP while the customer's browser consumes it. The probe detects and warns, and the error message names the tweak setting, but on a hardened panel client SSO simply will not work and the remedy is a change on the customer's server.
+
+8. **Migrated bundled-module Plesk installs are the least testable and most destructive code path.** Every fixture for shared-customer adoption is synthetic, because the real inputs come from an arbitrary history of bundled-module behaviour across Plesk versions. The design fails closed (`owner_shared=1` permanently disables owner deletion; adoption never authorises a destructive op in the same call; customer.del requires our external-id AND exactly one webspace), so the worst case degrades from 'deleted a live sibling' to 'orphan customer record' — but the code deserves a second reviewer before release.
+
+9. **Mixed server groups make the admin the integrity constraint.** Nothing prevents 'Gold' meaning 10 GB on cPanel and 20 GB on Plesk. The TestConnection catalogue diff surfaces it on the one screen admins visit, and the blank-ordinal and override-verification guards catch the loud failures, but two customers can still pay one price for different products if the admin configures two plans that differ only in limits.
+
+10. **Fail-closed trades availability for correctness and will generate tickets.** A first-ever probe failure on a newly added server blocks everything for that server with no fallback. The split TTL (panel_type and identity never expire; only capabilities refresh, and only in interactive contexts) blunts the transient case, but the initial-setup case is a hard stop by design.
+
+11. **Ordinal 7's advanced textarea will become a junk drawer.** It is the pressure valve that makes append-only survivable and it is undiscoverable, free-text, and validated only at parse time and in the TestConnection lint. Within two releases it will hold a dozen keys with no UI.
+
+12. **32-bit PHP and very large quotas.** `ByteParser` returns float and `Quota` clamps, but any 32-bit host provisioning multi-TB reseller plans is untested territory; `SUPPORTED-VERSIONS.md` states 64-bit as a requirement and Bootstrap asserts it with a clear code.
+
+13. **WHMCS Eloquent model shapes are not public API.** The design uses Capsule with explicit joins rather than Eloquent relations precisely to reduce this exposure, but `serviceProperties->save()` and `App::getFromRequest()` are still feature-detected guesses across 7.8 and 8.x; the twin bootstrap stubs test our assumptions, not WHMCS's actual behaviour.
+
