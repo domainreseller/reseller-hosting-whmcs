@@ -1,296 +1,209 @@
 <div align="center">
+  <a href="README-TR.md">TR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/TR.png" alt="TR" height="20" /></a>
+  <a href="README.md"> | EN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/US.png" alt="EN" height="20" /></a>
+  <a href="README-DE.md"> | DE <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/DE.png" alt="DE" height="20" /></a>
+  <a href="README-SA.md"> | AR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/SA.png" alt="AR" height="20" /></a>
+  <a href="README-NL.md"> | NL <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/NL.png" alt="NL" height="20" /></a>
+  <a href="README-AZ.md"> | AZ <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/AZ.png" alt="AZ" height="20" /></a>
+  <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
+  <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
+  <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+</div>
+
+<div align="center">
 
 # DNA Reseller Hosting
 
-**cPanel ve Plesk reseller hesaplarını tek WHMCS modülünden yönetin.**
+**Manage cPanel and Plesk reseller accounts from a single WHMCS module.**
 
-Tek modül, iki panel. Panel tipi sunucu başına otomatik algılanır — aynı ürün hem cPanel
-hem Plesk sunucusu barındıran bir gruba bağlanabilir.
+One module, two panels. The panel type is detected automatically per server — the same product can
+point at a group that holds both cPanel and Plesk servers.
 
 ![WHMCS](https://img.shields.io/badge/WHMCS-7.8%20%E2%80%93%208.x-4A90D9?style=flat-square)
 ![PHP](https://img.shields.io/badge/PHP-7.2%20%E2%80%93%208.4-777BB4?style=flat-square&logo=php&logoColor=white)
-![cPanel](https://img.shields.io/badge/cPanel%2FWHM-desteklenir-FF6C2C?style=flat-square)
-![Plesk](https://img.shields.io/badge/Plesk-desteklenir-53BCE6?style=flat-square)
+![cPanel](https://img.shields.io/badge/cPanel%2FWHM-supported-FF6C2C?style=flat-square)
+![Plesk](https://img.shields.io/badge/Plesk-supported-53BCE6?style=flat-square)
 
 </div>
 
 ---
 
-## ✨ Neler yapar
+## ✨ What it does
 
-| Özellik | cPanel/WHM | Plesk |
+| Feature | cPanel/WHM | Plesk |
 |---|:---:|:---:|
-| Hesap oluşturma | ✅ | ✅ |
-| Askıya alma / geri alma | ✅ | ✅ |
-| Sonlandırma | ✅ | ✅ |
-| Şifre değişikliği | ✅ | ✅ |
-| Paket / plan değişikliği | ✅ | ✅ |
-| Müşteri paneline tek tıkla giriş | ✅ | ✅ |
-| Disk & trafik kullanım senkronu | ✅ | ✅ |
-| Sunucu yöneticisi girişi (Log in to Server) | ✅ | — |
-| Disk / trafik override'ı (ürün bazlı) | ✅ | plan belirler |
-| Dedicated IP | ✅ | plan belirler |
+| Account creation | ✅ | ✅ |
+| Suspend / unsuspend | ✅ | ✅ |
+| Termination | ✅ | ✅ |
+| Password change | ✅ | ✅ |
+| Package / plan change | ✅ | ✅ |
+| One-click login to the client panel | ✅ | ✅ |
+| Disk & bandwidth usage sync | ✅ | ✅ |
+| Server admin login (Log in to Server) | ✅ | — |
+| Disk / bandwidth override (per product) | ✅ | set by the plan |
+| Dedicated IP | ✅ | set by the plan |
 
-> 💡 **Reseller için tasarlandı.** Root veya admin yetkisi gerekmez; modül sizin reseller
-> hesabınızın yetkileriyle çalışır ve açılan hesaplar sizin kotanıza işlenir.
+> 💡 **Built for resellers.** It does not need root or admin access; the module works with the
+> permissions of your own reseller account, and every account it creates counts against your quota.
 
 ---
 
-## 📋 Gereksinimler
+## 📋 Requirements
 
-- **WHMCS** 7.8 veya üzeri
+- **WHMCS** 7.8 or newer
 - **PHP** 7.2 – 8.4
-- PHP eklentileri: `curl`, `json`, `libxml`, `simplexml`, `mbstring`
-- **cPanel/WHM** 11.68+ &nbsp;veya&nbsp; **Plesk** (XML-API protokol 1.6.3.0+)
+- PHP extensions: `curl`, `json`, `libxml`, `simplexml`, `mbstring`
+- **cPanel/WHM** 11.68+ &nbsp;or&nbsp; **Plesk** (XML-API protocol 1.6.3.0+)
 
-> ✅ Veritabanı tablosu oluşturulmaz, cron ayarı gerekmez, composer bağımlılığı yoktur.
-> Kurulum yalnızca bir klasör kopyalamaktan ibarettir.
+> ✅ No database table is created, no cron job is required, and there are no composer dependencies.
+> Installation is nothing more than copying a folder.
 
 ---
 
-## 🚀 Kurulum
+## 🚀 Installation
 
-### 1️⃣ Modülü yükleyin
+### 1️⃣ Install the module
 
-`dnahosting` klasörünü WHMCS kurulumunuzdaki `modules/servers/` dizinine kopyalayın.
+Copy the `dnahosting` folder into the `modules/servers/` directory of your WHMCS installation.
 
 ```
 whmcs/
 └── modules/
     └── servers/
-        └── dnahosting/     ← buraya
+        └── dnahosting/     ← here
 ```
 
-### 2️⃣ Sunucuyu ekleyin
+### 2️⃣ Add the server
 
 **Configuration → System Settings → Servers → Add New Server**
 
-| Alan | Ne yazılacak |
+| Field | What to enter |
 |---|---|
 | **Module** | `DNA Reseller Hosting` |
-| **Hostname or IP Address** | Sunucu adresi — başında `https://` **olmadan**, sonunda port **olmadan** |
-| **Username** | Reseller kullanıcı adınız |
-| **Password** | Reseller şifreniz *(token varsa zorunlu değil, yine de girin)* |
-| **API Token / Access Hash** | cPanel'de WHM API token, Plesk'te API key |
+| **Hostname or IP Address** | The server address — **without** a leading `https://` and **without** a trailing port |
+| **Username** | Your reseller username |
+| **Password** | Your reseller password *(not strictly required if you have a token, but enter it anyway)* |
+| **API Token / Access Hash** | A WHM API token on cPanel, an API key on Plesk |
 
-Bu bilgiler sipariş sonrası size iletilir. Dilediğiniz zaman
-**[Reseller Hosting sayfanızdan](https://dm.domainnameapi.com/hosting)** hizmetin yanındaki
-**⚙️ çark simgesine** tıklayıp **Kontrol Paneli** sekmesinden de görebilirsiniz.
+These details are sent to you after your order. You can also look them up at any time from
+**[your Reseller Hosting page](https://dm.domainnameapi.com/hosting)**: click the
+**⚙️ gear icon** next to the service and open the **Control Panel** tab.
 
-![Sunucu ekleme ekranı](docs/images/sunucu-ekleme.png)
+![Add server screen](docs/images/sunucu-ekleme.png)
 
-### 3️⃣ Bağlantıyı test edin
+### 3️⃣ Test the connection
 
 **Go to Advanced Mode** → **Test Connection**
 
-Bilgiler doğruysa başarılı mesajını görürsünüz. Ardından sunucuyu **kaydedin**.
+If the credentials are correct you will see a success message. Then **save** the server.
 
-> ⚠️ **Bağlantı başarısız olursa ilk bakılacak yer port alanıdır.**
-> cPanel `2087`, Plesk `8443` kullanır. Boş bıraktığınızda modül panele göre doğru portu kendisi
-> seçer; farklı bir port kullanıyorsanız **Override with Custom Port** işaretleyip elle girin.
+> ⚠️ **If the connection fails, the port field is the first place to look.**
+> cPanel uses `2087`, Plesk uses `8443`. Leave it empty and the module picks the right port for the
+> detected panel; if you run a different port, tick **Override with Custom Port** and enter it manually.
 
-### 4️⃣ Sunucu grubu oluşturun
+### 4️⃣ Create a server group
 
-**Servers → Create New Group** ile yeni bir grup açıp sunucuyu içine alın, ya da mevcut bir gruba
-ekleyin. Ürünler sunucuya doğrudan değil, **grup üzerinden** bağlanır.
+Use **Servers → Create New Group** to create a new group and add the server to it, or add it to an
+existing group. Products are never linked to a server directly — always **through a group**.
 
-### 5️⃣ Ürünü ayarlayın
+### 5️⃣ Configure the product
 
-Yeni ürün oluşturun veya mevcut ürünü düzenleyip **Module Settings** sekmesine geçin:
+Create a new product or edit an existing one and open the **Module Settings** tab:
 
-| Ayar | Değer |
+| Setting | Value |
 |---|---|
 | **Module Name** | `DNA Reseller Hosting` |
-| **Server Group** | Oluşturduğunuz grup |
-| **Panel Type** | `Auto` *(veya sunucunuzu biliyorsanız doğrudan seçin)* |
-| **Package / Plan** | Reseller panelinizde tanımlı paketin adı |
+| **Server Group** | The group you created |
+| **Panel Type** | `Auto` *(or pick the panel directly if you know your server)* |
+| **Package / Plan** | The name of the package defined in your reseller panel |
 
-> 💡 **cPanel'de paket önekini yazmayın.** Panelde `bakcay328_paket2` görünen paket için ürüne
-> yalnızca `paket2` yazmanız yeterlidir — modül `kullaniciadi_` önekini kendisi çözer.
+> 💡 **Do not include the package prefix on cPanel.** For a package that shows up as
+> `bakcay328_paket2` in the panel, just enter `paket2` on the product — the module resolves the
+> `username_` prefix itself.
 
-**Kaydedin — modül kullanıma hazır.** 🎉
+**Save it — the module is ready to use.** 🎉
 
-<details>
-<summary><b>🔀 Karışık sunucu grupları (cPanel + Plesk birlikte)</b></summary>
-
-<br>
-
-Aynı ürün, içinde hem cPanel hem Plesk sunucusu bulunan bir gruba bağlanabilir. Modül siparişin
-düştüğü sunucunun panel tipini kendisi tespit eder ve doğru API'yi kullanır.
-
-Bunun için **iki panelde de aynı isimde** bir paket/plan tanımlayın:
-
-| | cPanel'de | Plesk'te | Üründe yazılacak |
-|---|---|---|---|
-| Paket adı | `bakcay328_Gold` | `Gold` | `Gold` |
-
-Limitlerin iki panelde de aynı olmasına siz dikkat etmelisiniz; modül bunu doğrulamaz.
-
-</details>
+**‼️From this point on you can manage cPanel and Plesk reseller accounts through the module across every WHMCS workflow. Creation, suspension and deletion are entirely under WHMCS's control.**
 
 ---
 
-## 🔑 Yetkilendirme
+## 🔍 Logs and troubleshooting
 
-<details open>
-<summary><b>cPanel — WHM API Token</b></summary>
+There are two separate logs, and they behave differently:
 
-<br>
-
-Token'ı **reseller** kullanıcısıyla WHM'e girip **Development → Manage API Tokens** altından
-oluşturun.
-
-Root SSH veya WHM Terminal erişiminiz varsa tek komutla da üretebilirsiniz:
-
-```bash
-whmapi1 --user=RESELLER api_token_create token_name=whmcs \
-  acl-1=create-acct acl-2=suspend-acct acl-3=kill-acct \
-  acl-4=passwd acl-5=upgrade-account acl-6=list-accts \
-  acl-7=list-pkgs acl-8=create-user-session acl-9=show-bandwidth \
-  acl-10=quota acl-11=limit-bandwidth
-```
-
-**Gereken yetkiler:**
-
-| Yetki | Ne için |
-|---|---|
-| `create-acct` | hesap oluşturma |
-| `suspend-acct` · `kill-acct` | askıya alma · sonlandırma |
-| `passwd` | şifre değişikliği |
-| `upgrade-account` | paket değişikliği |
-| `list-accts` | bağlantı testi ve kullanım senkronu |
-| `list-pkgs` | paket adı çözümleme |
-| `create-user-session` | müşteri paneline tek tıkla giriş |
-| `show-bandwidth` | trafik kullanımı |
-| `quota` · `limit-bandwidth` | ürün üzerindeki disk/trafik override'ları |
-
-> ⚠️ **Yetkiler token'a oluşturulma anında gömülür.** Reseller'ın yetkilerini sonradan
-> değiştirirseniz mevcut token güncellenmez — eskisini silip **yenisini üretmeniz** gerekir.
-
-> 💡 Test Connection eksik yetki bulursa hangilerinin eksik olduğunu tek tek yazar.
-
-</details>
-
-<details open>
-<summary><b>Plesk — API Key</b></summary>
-
-<br>
-
-Reseller hesabının **"Ability to use XML API"** izni açık olmalıdır — bu izin varsayılan olarak
-**kapalıdır**.
-
-Anahtarı sunucuda üretin:
-
-```bash
-plesk bin secret_key --create \
-  -ip-address <WHMCS sunucunuzun çıkış IP'si> \
-  -description "WHMCS"
-```
-
-> ⚠️ **Plesk anahtarı, oluşturulduğu IP adresine bağlanır.** Başka bir IP için üretilmiş anahtar
-> `11003 Invalid secret key usage` hatası verir.
-
-> 💡 Anahtar yerine **Password** alanını doldurmak da çalışır — modül ikisini de destekler.
-
-</details>
-
----
-
-## 🔒 TLS doğrulaması
-
-Doğrulama, sertifikanın karşılaştırılabileceği bir **ad** olduğunda açılır:
-
-| Yapılandırma | Doğrulama | Not |
-|---|:---:|---|
-| Yalnızca IP | ❌ | Hiçbir sertifika çıplak IP ile eşleşmez |
-| Hostname alanına da IP yazılmış | ❌ | Aynı sebep |
-| IP **+** gerçek hostname | ✅ | İstek hostname'e gider, bağlantı IP'ye sabitlenir |
-| Yalnızca hostname | ✅ | Normal doğrulama |
-
-> 💡 Sertifikası olan sunucularda **hem IP hem hostname** alanını doldurun: hem doğrulama çalışır,
-> hem bağlantı tam olarak istediğiniz makineye gider.
-
-Yönlendirmeler hiçbir zaman takip edilmez — bir `3xx` yanıtı API token'ını hedef sunucuya
-taşıyacağı için hata olarak raporlanır.
-
----
-
-## 🔍 Kayıtlar ve sorun giderme
-
-İki ayrı kayıt yeri vardır ve farklı davranırlar:
-
-| Kayıt | Ne zaman yazar | Ne içerir |
+| Log | When it writes | What it contains |
 |---|---|---|
-| **Activity Log**<br>*Utilities → Logs → Activity Log* | **Her zaman** | Başarısız her işlem, `dnahosting:` önekiyle, servis numarası ve alan adıyla |
-| **Module Log**<br>*Utilities → Logs → Module Log* | Yalnızca **Module Debug Mode** açıkken | Panele giden her istek ve dönen yanıt |
+| **Activity Log**<br>*Utilities → Logs → Activity Log* | **Always** | Every failed operation, prefixed with `dnahosting:`, along with the service ID and domain |
+| **Module Log**<br>*Utilities → Logs → Module Log* | Only while **Module Debug Mode** is on | Every request sent to the panel and the response it returned |
 
-> 💡 Module Debug Mode: **Setup → General Settings → Other → Module Debug Mode**.
-> Sorunu tekrar üretmeden önce açın, sonra kapatın. `note:` önekli satırlar istek değil, modülün
-> kendi gerekçesidir.
+> 💡 Module Debug Mode lives at **Setup → General Settings → Other → Module Debug Mode**.
+> Turn it on before reproducing the problem, then turn it back off. Lines prefixed with `note:` are
+> not requests — they are the module explaining its own reasoning.
 
-> 🔐 API token'ları ve müşteri şifreleri kayıtlara **düz metin olarak yazılmaz**.
+> 🔐 API tokens and client passwords are **never written to the logs in plain text**.
 
-### Sık karşılaşılan hatalar
+### Common errors
 
-| Belirti | Sebep ve çözüm |
+| Symptom | Cause and fix |
 |---|---|
-| *Could not determine whether this server runs cPanel or Plesk* | Her iki panel de yanıt vermedi. Port ve token'ı kontrol edin, ya da ürün ayarında **Panel Type**'ı açıkça seçin |
-| *WHM refused this login* | Kullanıcı reseller değil, ya da token cPanel arayüzünde üretilmiş. Token **WHM'de** üretilmelidir |
-| *Server returned HTTP 3xx (redirect)* | Yanlış port, ya da panel bir giriş sayfasına yönlendiriyor |
-| Plesk **11003** | API anahtarı başka bir IP için üretilmiş — yeniden üretin |
-| Plesk **1010** | Panel art arda başarısız denemeden sonra IP'yi kısıtlıyor; birkaç dakika bekleyin |
-| Plesk **2204** | Panel isteği kabul edip kendi web sunucusunu yapılandırırken düştü — sunucu tarafı sorunudur |
+| *Could not determine whether this server runs cPanel or Plesk* | Neither panel responded. Check the port and the token, or set **Panel Type** explicitly in the product settings |
+| *WHM refused this login* | The user is not a reseller, or the token was generated in the cPanel interface. The token must be created **in WHM** |
+| *Server returned HTTP 3xx (redirect)* | Wrong port, or the panel is redirecting to a login page |
+| Plesk **11003** | The API key was issued for a different IP — generate a new one |
+| Plesk **1010** | The panel is rate-limiting your IP after repeated failed attempts; wait a few minutes |
+| Plesk **2204** | The panel accepted the request but failed while configuring its own web server — this is a server-side problem |
 
 ---
 
-## ⚙️ Bilinmesi gerekenler
+## ⚙️ Things worth knowing
 
 <details>
-<summary><b>Panel farkları</b></summary>
+<summary><b>Panel differences</b></summary>
 
 <br>
 
-- **Disk Quota / Bandwidth** ürün ayarları yalnızca **cPanel**'de uygulanır. Plesk'te limitleri
-  servis planı belirler; alanlar doldurulsa bile yok sayılır ve modül log'una not düşülür.
-- **Dedicated IP** yalnızca cPanel'de geçerlidir.
-- **Plesk'te tek tıkla giriş** müşteri alanındaki *Log in to Panel* düğmesiyle çalışır. Plesk
-  yönlendirme tabanlı oturum açmayı desteklemediği için sunucu listesindeki *Log in to Server*
-  düğmesi Plesk sunucularında kullanılamaz.
+- The **Disk Quota / Bandwidth** product settings apply on **cPanel** only. On Plesk the limits come
+  from the service plan; the fields are ignored even when filled in, and a note is written to the
+  module log.
+- **Dedicated IP** applies to cPanel only.
+- **One-click login on Plesk** works through the *Log in to Panel* button in the client area. Because
+  Plesk does not support redirect-based sign-on, the *Log in to Server* button in the server list is
+  unavailable for Plesk servers.
 
 </details>
 
 <details>
-<summary><b>Önbellekleme</b></summary>
+<summary><b>Caching</b></summary>
 
 <br>
 
-Her sunucu için iki bilgi **yedi gün** önbelleklenir:
+Two pieces of information are cached per server for **seven days**:
 
-- Hangi paneli çalıştırdığı
-- Konuştuğu XML-API protokol sürümü
+- Which panel it runs
+- The XML-API protocol version it speaks
 
-Bunlar normal işleyişte değişmez ve her istekte yeniden tespit etmek gereksiz tur atmaya yol açar.
+Neither changes during normal operation, and re-detecting them on every request would mean an extra
+round trip each time.
 
-Önbellek şu durumlarda geçersiz olur:
+The cache is invalidated when:
 
-- **Test Connection** her zaman temizler ve yeniden tespit eder
-- Sunucunun adresi, portu, kullanıcı adı veya token'ı değişirse otomatik
-- Yedi gün sonunda
+- **Test Connection** runs — it always clears the cache and re-detects
+- The server's address, port, username or token changes — automatically
+- Seven days have passed
 
-> 🔐 Önbellekte hiçbir kimlik bilgisi saklanmaz; token yalnızca anahtar üretiminde hash olarak
-> kullanılır.
+> 🔐 No credentials are stored in the cache; the token is only used as a hash when building the key.
 
 </details>
 
 <details>
-<summary><b>Ürün ayarlarının sırası</b></summary>
+<summary><b>The order of the product settings</b></summary>
 
 <br>
 
-WHMCS ürün ayarlarını **konuma göre** saklar (`configoption1..5`). Bu yüzden modülün ayar listesine
-yalnızca **sona** ekleme yapılabilir:
+WHMCS stores product settings **by position** (`configoption1..5`). That is why new entries can only
+be appended to the **end** of the module's settings list:
 
-| # | Ayar |
+| # | Setting |
 |---|---|
 | 1 | Panel Type |
 | 2 | Package / Plan |
@@ -298,7 +211,8 @@ yalnızca **sona** ekleme yapılabilir:
 | 4 | Bandwidth (MB) |
 | 5 | Dedicated IP |
 
-Araya ekleme veya sıra değişikliği, mevcut tüm ürünlerde kayıtlı değerleri sessizce kaydırır.
+Inserting a setting in the middle, or reordering the list, silently shifts the stored values on every
+existing product.
 
 </details>
 
@@ -306,8 +220,8 @@ Araya ekleme veya sıra değişikliği, mevcut tüm ürünlerde kayıtlı değer
 
 <div align="center">
 
-**DNA Reseller Hosting** · WHMCS için cPanel & Plesk reseller modülü
+**DNA Reseller Hosting** · cPanel & Plesk reseller module for WHMCS
 
-[domainnameapi.com](https://www.domainnameapi.com) · [Reseller paneli](https://dm.domainnameapi.com/hosting)
+[domainnameapi.com](https://www.domainnameapi.com) · [Reseller panel](https://dm.domainnameapi.com/hosting)
 
 </div>
