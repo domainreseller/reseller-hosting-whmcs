@@ -1,0 +1,24 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-servers",
+    "name": "dnahosting",
+    "license": "proprietary",
+    "category": "webhosting",
+    "description": {
+        "name": "DNA Reseller Hosting",
+        "tagline": "cPanel ve Plesk reseller hesapları için tek modül.",
+        "long": "Reseller kimlik bilgileriyle (sunucu adresi, kullanıcı adı, API token) hem cPanel/WHM hem Plesk sunucularında hosting hesabı sağlar. Panel tipi sunucu başına otomatik algılanır, böylece tek bir ürün her iki panel tipini barındıran bir sunucu grubuna bağlanabilir.",
+        "features": [
+            "Otomatik hesap oluşturma, askıya alma ve sonlandırma",
+            "Şifre ve paket değişikliği",
+            "Müşteri için tek tıkla kontrol paneli girişi",
+            "Disk ve trafik kullanımının WHMCS'e senkronu",
+            "cPanel ve Plesk aynı sunucu grubunda"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Bunyamin Akcay"
+        }
+    ]
+}
