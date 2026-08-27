@@ -17,4 +17,4 @@
 *.local.php
 tests/Cassette/*.real.json
 
-docs/*
+docs/superpowers/*
