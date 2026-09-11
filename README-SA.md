@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@
 ![Plesk](https://img.shields.io/badge/Plesk-%D9%85%D8%AF%D8%B9%D9%88%D9%85-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 المحتويات
+
+- [✨ ما الذي تقوم به](#-ما-الذي-تقوم-به)
+- [📋 المتطلبات](#-المتطلبات)
+- [🚀 التثبيت](#-التثبيت)
+- [🔍 السجلات وحل المشكلات](#-السجلات-وحل-المشكلات)
+- [🧩 أمور ينبغي معرفتها](#-أمور-ينبغي-معرفتها)
+- [📄 سجل التغييرات](#-سجل-التغييرات)
 
 ---
 
@@ -155,7 +168,7 @@ whmcs/
 
 ---
 
-## ⚙️ أمور ينبغي معرفتها
+## 🧩 أمور ينبغي معرفتها
 
 <details>
 <summary><b>الفروق بين اللوحتين</b></summary>
@@ -213,6 +226,12 @@ whmcs/
 فأي إدراج في الوسط أو تغيير في الترتيب سيُزحزح القيم المحفوظة في جميع المنتجات القائمة دون أي تنبيه.
 
 </details>
+
+---
+
+## 📄 سجل التغييرات
+
+التغييرات إصدارًا بإصدار موجودة في [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

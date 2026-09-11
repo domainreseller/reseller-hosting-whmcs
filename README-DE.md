@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@ mit einer Gruppe verbunden werden, die sowohl cPanel- als auch Plesk-Server enth
 ![Plesk](https://img.shields.io/badge/Plesk-unterst%C3%BCtzt-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 Inhalt
+
+- [✨ Was es kann](#-was-es-kann)
+- [📋 Voraussetzungen](#-voraussetzungen)
+- [🚀 Installation](#-installation)
+- [🔍 Protokolle und Fehlersuche](#-protokolle-und-fehlersuche)
+- [🧩 Wissenswertes](#-wissenswertes)
+- [📄 Changelog](#-changelog)
 
 ---
 
@@ -159,7 +172,7 @@ Es gibt zwei getrennte Protokollorte, die sich unterschiedlich verhalten:
 
 ---
 
-## ⚙️ Wissenswertes
+## 🧩 Wissenswertes
 
 <details>
 <summary><b>Unterschiede zwischen den Panels</b></summary>
@@ -219,6 +232,12 @@ Ein Einfügen dazwischen oder eine geänderte Reihenfolge verschiebt die gespeic
 bestehenden Produkten stillschweigend.
 
 </details>
+
+---
+
+## 📄 Changelog
+
+Die Änderungen Version für Version stehen in [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

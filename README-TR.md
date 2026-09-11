@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@ hem Plesk sunucusu barındıran bir gruba bağlanabilir.
 ![Plesk](https://img.shields.io/badge/Plesk-desteklenir-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 İçindekiler
+
+- [✨ Neler yapar](#-neler-yapar)
+- [📋 Gereksinimler](#-gereksinimler)
+- [🚀 Kurulum](#-kurulum)
+- [🔍 Kayıtlar ve sorun giderme](#-kayıtlar-ve-sorun-giderme)
+- [🧩 Bilinmesi gerekenler](#-bilinmesi-gerekenler)
+- [📄 Değişiklik günlüğü](#-değişiklik-günlüğü)
 
 ---
 
@@ -154,7 +167,7 @@ Yeni ürün oluşturun veya mevcut ürünü düzenleyip **Module Settings** sekm
 
 ---
 
-## ⚙️ Bilinmesi gerekenler
+## 🧩 Bilinmesi gerekenler
 
 <details>
 <summary><b>Panel farkları</b></summary>
@@ -212,6 +225,12 @@ yalnızca **sona** ekleme yapılabilir:
 Araya ekleme veya sıra değişikliği, mevcut tüm ürünlerde kayıtlı değerleri sessizce kaydırır.
 
 </details>
+
+---
+
+## 📄 Değişiklik günlüğü
+
+Sürüm sürüm değişiklikler [CHANGELOG.md](CHANGELOG.md) dosyasında.
 
 ---
 

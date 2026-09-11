@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@
 ![Plesk](https://img.shields.io/badge/Plesk-%E6%94%AF%E6%8C%81-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 目录
+
+- [✨ 功能一览](#-功能一览)
+- [📋 环境要求](#-环境要求)
+- [🚀 安装](#-安装)
+- [🔍 日志与故障排查](#-日志与故障排查)
+- [🧩 须知事项](#-须知事项)
+- [📄 更新日志](#-更新日志)
 
 ---
 
@@ -153,7 +166,7 @@ whmcs/
 
 ---
 
-## ⚙️ 须知事项
+## 🧩 须知事项
 
 <details>
 <summary><b>两种面板的差异</b></summary>
@@ -208,6 +221,12 @@ WHMCS 按**位置**保存产品设置（`configoption1..5`）。因此模块的�
 在中间插入或调整顺序，会让所有现有产品中已保存的值悄悄发生错位。
 
 </details>
+
+---
+
+## 📄 更新日志
+
+各版本的变更记录见 [CHANGELOG.md](CHANGELOG.md)。
 
 ---
 

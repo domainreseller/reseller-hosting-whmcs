@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -26,6 +28,17 @@ des serveurs Plesk.
 ![Plesk](https://img.shields.io/badge/Plesk-pris%20en%20charge-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 Sommaire
+
+- [✨ Ce que fait le module](#-ce-que-fait-le-module)
+- [📋 Prérequis](#-prérequis)
+- [🚀 Installation](#-installation)
+- [🔍 Journaux et dépannage](#-journaux-et-dépannage)
+- [🧩 Bon à savoir](#-bon-à-savoir)
+- [📄 Journal des modifications](#-journal-des-modifications)
 
 ---
 
@@ -159,7 +172,7 @@ Il existe deux emplacements de journalisation distincts, au comportement différ
 
 ---
 
-## ⚙️ Bon à savoir
+## 🧩 Bon à savoir
 
 <details>
 <summary><b>Différences entre les panneaux</b></summary>
@@ -220,6 +233,12 @@ Toute insertion intermédiaire ou modification de l'ordre décalerait silencieus
 enregistrées de tous les produits existants.
 
 </details>
+
+---
+
+## 📄 Journal des modifications
+
+Les changements version par version se trouvent dans [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

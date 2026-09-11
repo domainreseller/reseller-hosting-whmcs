@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@ həm də Plesk serveri saxlayan bir qrupa bağlana bilər.
 ![Plesk](https://img.shields.io/badge/Plesk-d%C9%99st%C9%99kl%C9%99nir-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 Mündəricat
+
+- [✨ Nə edir](#-nə-edir)
+- [📋 Tələblər](#-tələblər)
+- [🚀 Quraşdırma](#-quraşdırma)
+- [🔍 Loglar və problemlərin həlli](#-loglar-və-problemlərin-həlli)
+- [🧩 Bilinməsi lazım olanlar](#-bilinməsi-lazım-olanlar)
+- [📄 Dəyişiklik jurnalı](#-dəyişiklik-jurnalı)
 
 ---
 
@@ -155,7 +168,7 @@ Yeni məhsul yaradın və ya mövcud məhsulu redaktə edib **Module Settings** 
 
 ---
 
-## ⚙️ Bilinməsi lazım olanlar
+## 🧩 Bilinməsi lazım olanlar
 
 <details>
 <summary><b>Panel fərqləri</b></summary>
@@ -215,6 +228,12 @@ Araya əlavə etmək və ya sıranı dəyişmək mövcud bütün məhsullarda ya
 sürüşdürür.
 
 </details>
+
+---
+
+## 📄 Dəyişiklik jurnalı
+
+Versiya-versiya dəyişikliklər [CHANGELOG.md](CHANGELOG.md) faylındadır.
 
 ---
 

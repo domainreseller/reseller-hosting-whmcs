@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@ kan gekoppeld worden aan een groep met zowel cPanel- als Plesk-servers.
 ![Plesk](https://img.shields.io/badge/Plesk-ondersteund-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 Inhoud
+
+- [✨ Wat de module doet](#-wat-de-module-doet)
+- [📋 Vereisten](#-vereisten)
+- [🚀 Installatie](#-installatie)
+- [🔍 Logs en probleemoplossing](#-logs-en-probleemoplossing)
+- [🧩 Goed om te weten](#-goed-om-te-weten)
+- [📄 Changelog](#-changelog)
 
 ---
 
@@ -158,7 +171,7 @@ Er zijn twee aparte logs en ze gedragen zich verschillend:
 
 ---
 
-## ⚙️ Goed om te weten
+## 🧩 Goed om te weten
 
 <details>
 <summary><b>Verschillen tussen de panelen</b></summary>
@@ -219,6 +232,12 @@ Iets ertussen schuiven of de volgorde wijzigen verschuift stilzwijgend de opgesl
 alle bestaande producten.
 
 </details>
+
+---
+
+## 📄 Changelog
+
+De wijzigingen per versie staan in [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

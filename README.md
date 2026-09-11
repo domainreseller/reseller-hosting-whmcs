@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@ point at a group that holds both cPanel and Plesk servers.
 ![Plesk](https://img.shields.io/badge/Plesk-supported-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 Contents
+
+- [✨ What it does](#-what-it-does)
+- [📋 Requirements](#-requirements)
+- [🚀 Installation](#-installation)
+- [🔍 Logs and troubleshooting](#-logs-and-troubleshooting)
+- [🧩 Things worth knowing](#-things-worth-knowing)
+- [📄 Changelog](#-changelog)
 
 ---
 
@@ -155,7 +168,7 @@ There are two separate logs, and they behave differently:
 
 ---
 
-## ⚙️ Things worth knowing
+## 🧩 Things worth knowing
 
 <details>
 <summary><b>Panel differences</b></summary>
@@ -215,6 +228,12 @@ Inserting a setting in the middle, or reordering the list, silently shifts the s
 existing product.
 
 </details>
+
+---
+
+## 📄 Changelog
+
+Version-by-version changes are in [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

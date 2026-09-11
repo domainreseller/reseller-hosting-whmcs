@@ -8,6 +8,8 @@
   <a href="README-CN.md"> | CN <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/CN.png" alt="CN" height="20" /></a>
   <a href="README-FR.md"> | FR <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/FR.png" alt="FR" height="20" /></a>
   <a href="README-IT.md"> | IT <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/IT.png" alt="IT" height="20" /></a>
+  <a href="README-RU.md"> | RU <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/RU.png" alt="RU" height="20" /></a>
+  <a href="README-ES.md"> | ES <img style="padding-top: 8px" src="https://raw.githubusercontent.com/yammadev/flag-icons/master/png/ES.png" alt="ES" height="20" /></a>
 </div>
 
 <div align="center">
@@ -25,6 +27,17 @@ lo stesso prodotto può essere collegato a un gruppo che contiene sia server cPa
 ![Plesk](https://img.shields.io/badge/Plesk-supportato-53BCE6?style=flat-square)
 
 </div>
+
+---
+
+## 📑 Indice
+
+- [✨ Cosa fa](#-cosa-fa)
+- [📋 Requisiti](#-requisiti)
+- [🚀 Installazione](#-installazione)
+- [🔍 Log e risoluzione dei problemi](#-log-e-risoluzione-dei-problemi)
+- [🧩 Cose da sapere](#-cose-da-sapere)
+- [📄 Changelog](#-changelog)
 
 ---
 
@@ -155,7 +168,7 @@ Esistono due punti di registrazione distinti, con comportamenti diversi:
 
 ---
 
-## ⚙️ Cose da sapere
+## 🧩 Cose da sapere
 
 <details>
 <summary><b>Differenze tra i pannelli</b></summary>
@@ -216,6 +229,12 @@ Un inserimento intermedio o una modifica dell'ordine sposterebbe silenziosamente
 in tutti i prodotti esistenti.
 
 </details>
+
+---
+
+## 📄 Changelog
+
+Le modifiche versione per versione sono in [CHANGELOG.md](CHANGELOG.md).
 
 ---
 
