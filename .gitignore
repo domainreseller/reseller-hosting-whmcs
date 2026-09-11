@@ -1,1 +1,21 @@
-.idea
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
+
+# Bağımlılıklar ve derleme çıktıları
+/vendor/
+/node_modules/
+/build/dist/
+*.zip
+
+# Yerel yapılandırma ve sırlar
+.env
+*.local.php
+tests/Cassette/*.real.json
+
+docs/superpowers/*
+CLAUDE.md
