@@ -131,7 +131,7 @@ Yeni məhsul yaradın və ya mövcud məhsulu redaktə edib **Module Settings** 
 | **Panel Type** | `Auto` *(və ya serverinizi bilirsinizsə birbaşa seçin)* |
 | **Package / Plan** | Reseller panelinizdə təyin edilmiş paketin adı |
 
-> 💡 **cPanel-də paket prefiksini yazmayın.** Paneldə `bakcay328_paket2` kimi görünən paket üçün
+> 💡 **cPanel-də paket prefiksini yazmayın.** Paneldə `user12345_paket2` kimi görünən paket üçün
 > məhsulda yalnız `paket2` yazmağınız kifayətdir — modul `kullaniciadi_` prefiksini özü həll edir.
 
 **Yadda saxlayın — modul istifadəyə hazırdır.** 🎉

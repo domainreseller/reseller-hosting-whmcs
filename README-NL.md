@@ -133,7 +133,7 @@ Maak een nieuw product aan of bewerk een bestaand product en ga naar het tabblad
 | **Package / Plan** | De naam van het pakket zoals gedefinieerd in uw resellerpaneel |
 
 > 💡 **Laat bij cPanel het pakketvoorvoegsel weg.** Voor een pakket dat in het paneel als
-> `bakcay328_paket2` verschijnt, volstaat `paket2` in het product — de module vult het voorvoegsel
+> `user12345_paket2` verschijnt, volstaat `paket2` in het product — de module vult het voorvoegsel
 > `gebruikersnaam_` zelf aan.
 
 **Opslaan — de module is klaar voor gebruik.** 🎉

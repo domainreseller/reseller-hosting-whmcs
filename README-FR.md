@@ -135,7 +135,7 @@ Créez un nouveau produit ou modifiez un produit existant, puis ouvrez l'onglet 
 | **Package / Plan** | Le nom du package défini dans votre panneau revendeur |
 
 > 💡 **Sur cPanel, n'indiquez pas le préfixe du package.** Pour un package affiché comme
-> `bakcay328_paket2` dans le panneau, il suffit d'écrire `paket2` dans le produit — le module
+> `user12345_paket2` dans le panneau, il suffit d'écrire `paket2` dans le produit — le module
 > résout le préfixe `nomutilisateur_` tout seul.
 
 **Enregistrez — le module est prêt à l'emploi.** 🎉

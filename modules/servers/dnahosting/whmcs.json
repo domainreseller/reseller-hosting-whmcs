@@ -6,19 +6,20 @@
     "category": "webhosting",
     "description": {
         "name": "DNA Reseller Hosting",
-        "tagline": "cPanel ve Plesk reseller hesapları için tek modül.",
-        "long": "Reseller kimlik bilgileriyle (sunucu adresi, kullanıcı adı, API token) hem cPanel/WHM hem Plesk sunucularında hosting hesabı sağlar. Panel tipi sunucu başına otomatik algılanır, böylece tek bir ürün her iki panel tipini barındıran bir sunucu grubuna bağlanabilir.",
+        "tagline": "One WHMCS module for Domain Name API cPanel and Plesk reseller hosting accounts.",
+        "long": "Provisions hosting accounts on both cPanel/WHM and Plesk servers using the reseller hosting credentials provided by Domain Name API (server address, username and API token). The panel type is detected automatically per server, so a single product can point at a server group that holds both panel types.",
         "features": [
-            "Otomatik hesap oluşturma, askıya alma ve sonlandırma",
-            "Şifre ve paket değişikliği",
-            "Müşteri için tek tıkla kontrol paneli girişi",
-            "Disk ve trafik kullanımının WHMCS'e senkronu",
-            "cPanel ve Plesk aynı sunucu grubunda"
+            "Automatic account creation, suspension, unsuspension and termination",
+            "Password and package changes",
+            "One-click control panel login for clients",
+            "Disk and bandwidth usage sync to WHMCS",
+            "cPanel and Plesk servers in the same server group"
         ]
     },
     "authors": [
         {
-            "name": "Bunyamin Akcay"
+            "name": "Domain Name API",
+            "homepage": "https:\/\/www.domainnameapi.com\/"
         }
     ]
 }

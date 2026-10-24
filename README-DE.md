@@ -135,7 +135,7 @@ Legen Sie ein neues Produkt an oder bearbeiten Sie ein vorhandenes und wechseln 
 | **Package / Plan** | Der Name des in Ihrem Reseller-Panel definierten Pakets |
 
 > 💡 **Lassen Sie bei cPanel das Paket-Präfix weg.** Für ein Paket, das im Panel als
-> `bakcay328_paket2` erscheint, genügt im Produkt der Eintrag `paket2` — das Präfix `benutzername_`
+> `user12345_paket2` erscheint, genügt im Produkt der Eintrag `paket2` — das Präfix `benutzername_`
 > löst das Modul selbst auf.
 
 **Speichern — das Modul ist einsatzbereit.** 🎉

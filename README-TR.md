@@ -130,7 +130,7 @@ Yeni ürün oluşturun veya mevcut ürünü düzenleyip **Module Settings** sekm
 | **Panel Type** | `Auto` *(veya sunucunuzu biliyorsanız doğrudan seçin)* |
 | **Package / Plan** | Reseller panelinizde tanımlı paketin adı |
 
-> 💡 **cPanel'de paket önekini yazmayın.** Panelde `bakcay328_paket2` görünen paket için ürüne
+> 💡 **cPanel'de paket önekini yazmayın.** Panelde `user12345_paket2` görünen paket için ürüne
 > yalnızca `paket2` yazmanız yeterlidir — modül `kullaniciadi_` önekini kendisi çözer.
 
 **Kaydedin — modül kullanıma hazır.** 🎉

@@ -133,7 +133,7 @@ Cree un producto nuevo o edite uno existente y abra la pestaña **Module Setting
 | **Package / Plan** | El nombre del paquete definido en su panel de revendedor |
 
 > 💡 **No incluya el prefijo del paquete en cPanel.** Para un paquete que en el panel aparece como
-> `bakcay328_paket2`, basta con escribir `paket2` en el producto: el módulo resuelve el prefijo
+> `user12345_paket2`, basta con escribir `paket2` en el producto: el módulo resuelve el prefijo
 > `username_` por su cuenta.
 
 **Guárdelo: el módulo ya está listo.** 🎉

@@ -131,7 +131,7 @@ Crei un nuovo prodotto oppure modifichi uno esistente e apra la scheda **Module 
 | **Package / Plan** | Il nome del pacchetto definito nel Suo pannello rivenditore |
 
 > 💡 **Su cPanel non indichi il prefisso del pacchetto.** Per un pacchetto che nel pannello compare
-> come `bakcay328_paket2` è sufficiente scrivere `paket2` nel prodotto: il modulo risolve da sé il
+> come `user12345_paket2` è sufficiente scrivere `paket2` nel prodotto: il modulo risolve da sé il
 > prefisso `nomeutente_`.
 
 **Salvi — il modulo è pronto all'uso.** 🎉

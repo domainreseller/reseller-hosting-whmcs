@@ -131,7 +131,7 @@ Create a new product or edit an existing one and open the **Module Settings** ta
 | **Package / Plan** | The name of the package defined in your reseller panel |
 
 > 💡 **Do not include the package prefix on cPanel.** For a package that shows up as
-> `bakcay328_paket2` in the panel, just enter `paket2` on the product — the module resolves the
+> `user12345_paket2` in the panel, just enter `paket2` on the product — the module resolves the
 > `username_` prefix itself.
 
 **Save it — the module is ready to use.** 🎉
